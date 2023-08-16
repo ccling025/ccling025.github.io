@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/aa0c995329.js" crossorigin="anonymous"></script>
+    <title>興大附中第22屆桌球社/桌球隊</title>
+</head>
+<body>
+
+<section class="header">
+    <nav> <!--導航列-->
+        <a href="index.html" id="home"><img src="pic/dali-mark.png"/><h3>興大附中桌球</h3></a> <!--logo-->
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">首頁</a></li>
+                    <li><a href="#about">資訊</a></li>
+                    <li><a href="#photo">社團幹部</a></li>
+                    <li><a href="#event">活動相簿</a></li>
+                    <li><a href="https://www.instagram.com/shch_tt_22nd/">聯絡我們</a></li>
+                </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>興大附中第22屆桌球社/桌球隊</h1>
+        <p>The 22nd Session of SHCH Table Tennis</p>
+        <a href="" class="hero-btn">Visit Our IG To Know More</a>
+    </div>
+</section>
+
+<!----- About ----->
+
+<section class="about">
+    <a id="about"></a>
+    <h1>社團/球隊資訊</h1>
+    <p>Club/Team Information</p>
+
+    <div class="row">
+        <div class="about-col">
+            <h3>✨社團簡介</h3>
+            <p>桌球社作為一個球類運動社團，自然受到許多人喜愛，自創校以來擁有悠久的歷史。在社課中能學習基礎、精進技巧、互相切磋，以及認識許多打球的同好。我們誠摯邀請零基礎/有實力、有著熱愛桌球的心的你加入桌球社！</p>
+        </div>
+        <div class="about-col">
+            <h3>✨社團活動</h3>
+            <p>社團時間有兩節課，第一節課按照訓練菜單，由社長指導練習。下課時有社點。第二節課為自主訓練，互相切磋球技。在期末辦理社內排名賽。</p>
+        </div>
+        <div class="about-col">
+            <h3>✨桌球隊</h3>
+            <p>桌球隊為興大附中校隊，代表學校出賽市內大小比賽。由專門教練指導，在每週一有校內或校外的集訓，平日放學有自主參加的練球，不收費，零基礎、想參加訓練者可，也歡迎各路好手加入。            </p>
+        </div>
+    </div>
+</section>
+
+<!------- Photos ------->
+
+<section class="photo">
+    <a id="photo"></a>
+    <h1>社團幹部</h1>
+    <p>Committee Members</p>
+
+    <div class="row">
+        <div class="photo-col">
+            <img src="pic/IMG_0891.JPG"/>
+            <h3>社長</h3>
+            <p>超級大帥哥<p>
+        </div>
+        <div class="photo-col">
+            <img src="pic/IMG_0917.JPG"/>
+            <h3>隊長</h3>
+            <p>有點帥</p>
+        </div>
+        <div class="photo-col">
+            <img src="pic/IMG_0895.JPG"/>
+            <h3>文書</h3>
+            <p>很瘦</p>
+        </div>
+    </div>
+</section>
+
+<!------- Event ------->
+
+<section class="event">
+    <a id="event"></a>
+    <h1>活動相簿</h1>
+    <p>Event Album</p>
+
+    <div class="row">
+        <div class="event-col">
+            <img src="pic/IMG_0893.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>112年市長盃</h3>
+            </div>
+            </a>
+        </div>
+        <div class="event-col">
+            <img src="pic/IMG_0896.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>112年球隊訓練</h3>
+            </div>
+            </a>
+        </div>
+        <div class="event-col">
+            <img src="pic/IMG_0894.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>暫無</h3>
+            </div>
+            </a>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="event-col">
+            <img src="pic/IMG_0903.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>暫無</h3>
+            </div>
+            </a>
+        </div>
+        <div class="event-col">
+            <img src="pic/IMG_0907.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>暫無</h3>
+            </div>
+            </a>
+        </div>
+        <div class="event-col">
+            <img src="pic/IMG_0921.JPG"/>
+            <a href="">
+            <div class="layer">
+                <h3>暫無</h3>
+            </div>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+<!------- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Website  Written by Ching Lin Chen.<br/>Visit our Instagram to follow our daily life.</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/shch_tt_22nd/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</section>
+
+<!-------JavaScript For Toggle Menu------->
+
+<script>
+
+    let el = document.querySelector("#navLinks");
+
+    function showMenu(){
+        el.style.right = "0";
+    };
+    function hideMenu(){
+        el.style.right = "-200px";
+    };
+
+</script>
+</body>
+</html>
